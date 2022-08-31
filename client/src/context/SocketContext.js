@@ -3,7 +3,8 @@ import Peer from 'simple-peer';
 import { io } from 'socket.io-client';
 
 const SocketContext = createContext()
-const socket = io('http://localhost:5000')
+// const socket = io('http://localhost:5000')
+const socket = io('https://video-webrtc-production.up.railway.app/')
 
 export const ContextProvider = ({ children }) => {
 
